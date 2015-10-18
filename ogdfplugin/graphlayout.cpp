@@ -19,7 +19,6 @@
 #include "ogdf/energybased/FastMultipoleEmbedder.h"
 #include "ogdf/energybased/GEMLayout.h"
 #include "ogdf/energybased/MultilevelLayout.h"
-#include "ogdf/energybased/SpringEmbedderFR.h"
 #include "ogdf/energybased/SpringEmbedderFRExact.h"
 #include "ogdf/energybased/SpringEmbedderKK.h"
 #include "ogdf/energybased/StressMinimization.h"
@@ -96,7 +95,6 @@ void GraphLayout::setAlgorithm(Algorithm algorithm)
     CREATE_MODULE(RadialTreeLayout);
     CREATE_MODULE(ScalingLayout);
     CREATE_MODULE(SchnyderLayout);
-    CREATE_MODULE(SpringEmbedderFR);
     CREATE_MODULE(SpringEmbedderFRExact);
     CREATE_MODULE(SpringEmbedderKK);
     CREATE_MODULE(StressMinimization);

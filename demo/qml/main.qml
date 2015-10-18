@@ -77,7 +77,6 @@ Rectangle {
             ListElement { caption: "RadialTree" }
             ListElement { caption: "Scaling" }
             ListElement { caption: "Schnyder" }
-            ListElement { caption: "SpringEmbedderFR" }
             ListElement { caption: "SpringEmbedderFRExact" }
             ListElement { caption: "SpringEmbedderKK" }
             ListElement { caption: "StressMajorization" }

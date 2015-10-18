@@ -414,7 +414,7 @@ int AbacusGlobal::getParameter(const char *name, int &parameter) const
 		return 1;
 	else {
 		//parameter = s->ascii2int();
-		parameter = stoi(*s);
+		parameter = std::stoi(*s);
 		return 0;
 	}
 }
@@ -429,7 +429,7 @@ int AbacusGlobal::getParameter(const char *name, unsigned int &parameter) const
 		return 1;
 	else {
 		//parameter = s->ascii2unsignedint();
-		parameter = (unsigned int)stoul(*s);
+		parameter = (unsigned int)std::stoul(*s);
 		return 0;
 	}
 }

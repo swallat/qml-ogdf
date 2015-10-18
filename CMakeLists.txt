@@ -2,10 +2,12 @@
 # CMake listfile to specify the build process, see:
 # http://www.cmake.org/cmake/help/documentation.html
 #
+cmake_minimum_required(VERSION 3.2)
 project(QML-OGDF)
 
-# Require CMake 2.8.11+ for tweaked Qt5 support.
-cmake_minimum_required(VERSION 2.8.11)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+
+include(BuildOGDF)
 
 # Check for polluted source tree.
 if(EXISTS ${CMAKE_SOURCE_DIR}/CMakeCache.txt OR
